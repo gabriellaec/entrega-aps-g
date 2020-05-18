@@ -34,12 +34,12 @@ public class And3Gate extends Gate {
         if (inputIndex < 0 || inputIndex > 2) {
             throw new IndexOutOfBoundsException(inputIndex);
         }
-        if (inputIndex == 0){
+        if (inputIndex == 0) {
             nand1.connect(0, emitter);
-        }else if (inputIndex==1){
+        } else if (inputIndex == 1) {
             nand1.connect(1, emitter);
 
-        }else if (inputIndex==2){
+        } else {
             nand3.connect(1, emitter);
 
         }
