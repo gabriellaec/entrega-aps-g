@@ -60,14 +60,18 @@ public class GateView extends FixedPanel implements ActionListener, MouseListene
         int y_out = 176;
 
         int x = 15;
-        int y;
+        int y=100;
         int w = 50;
         int h = 50;
         if (inputSize == 1) {
             y = y_out;
             // se só tiver uma entrada, ela fica na mesma altura da saída
-        } else {
+        } else if (inputSize == 2){
             y = 135;
+        }
+        else if (inputSize==3){
+            y = 105;
+
         }
         int incremento = 66;
         for (JCheckBox inputBox : entradas) {
